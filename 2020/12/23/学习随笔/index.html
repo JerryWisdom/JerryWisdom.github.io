@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="z">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    
+    <title>colin 的学习笔记 | Java 后端</title>
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="研一研二见习  大厂暑期实习 研三秋招 
+刷leetcode  hot-100  看labuladong 算法小抄
+https://labuladong.gitbook.io/algo/
+https://github.com/labuladong/fucking-algorithm.git
+https://www.yuque.com/books/share/9f4576fb-9aa9-4965-a">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="colin 的学习笔记 | Java 后端">
+    <meta name="twitter:description" content="研一研二见习  大厂暑期实习 研三秋招 
+刷leetcode  hot-100  看labuladong 算法小抄
+https://labuladong.gitbook.io/algo/
+https://github.com/labuladong/fucking-algorithm.git
+https://www.yuque.com/books/share/9f4576fb-9aa9-4965-a">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="colin 的学习笔记 | Java 后端">
+    <meta property="og:description" content="研一研二见习  大厂暑期实习 研三秋招 
+刷leetcode  hot-100  看labuladong 算法小抄
+https://labuladong.gitbook.io/algo/
+https://github.com/labuladong/fucking-algorithm.git
+https://www.yuque.com/books/share/9f4576fb-9aa9-4965-a">
+
+    
+    <meta name="author" content="SEU zhi">
+    
+    
+<link rel="stylesheet" href="/css/vno.css">
+
+    
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+
+    
+
+    <meta name="generator" content="hexo"/>
+    
+    <link rel="alternate" type="application/rss+xml" title="colin 的学习笔记" href="/atom.xml">
+    
+
+    <link rel="canonical" href="http://example.com/2020/12/23/%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/"/>
+
+                 
+</head>
+
+<body class="home-template no-js">
+    
+<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+
+    
+<script src="/js/main.js"></script>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+<header class="panel-cover panel-cover--collapsed" style="background-image: url(/images/background-cover.jpg)">
+  <div class="panel-main">
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/" title="前往 colin 的学习笔记 的主页"><img src="/images/avatar.jpg" width="80" alt="colin 的学习笔记 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage for colin 的学习笔记">colin 的学习笔记</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">Java 后端</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description"></p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+
+        <div class="navigation-wrapper">
+          <div>
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="/#blog" title="Visit the blog" class="blog-button">Blog</a></li>
+            
+              <li class="navigation__item"><a href="">黄金屋</a></li>
+            
+              <li class="navigation__item"><a href="">时光机</a></li>
+            
+              <li class="navigation__item"><a href="">幻想间</a></li>
+            
+              <li class="navigation__item"><a href="">关于我</a></li>
+            
+            </ul>
+          </nav>
+          </div>
+          <div>
+          <nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  <!-- Weibo-->
+  
+
+  <!-- Github -->
+  
+  <li class="navigation__item">
+    <a href="https://github.com/JerryWisdom" title="GitHub" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+
+
+<!-- Stack Overflow -->
+        
+
+  <!-- Google Plus -->
+  
+
+<!-- Facebook -->
+
+  
+<!-- Twitter -->
+
+  
+
+  <li class="navigation__item">
+    <a href="/atom.xml" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+
+
+  </ul>
+</nav>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay cover-purple"></div>
+  </div> 
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single">
+
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2020-12-23T06:19:13.850Z" class="post-list__meta--date date">2020-12-23</time> &#8226; <span class="post-meta__tags tags">于  </span>
+      <span class="page-pv">
+       Read <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span>
+      </span> 
+   
+    </div>
+    <h1 class="post-title"></h1>
+  </header>
+
+  <section class="post">
+    <p>研一研二见习  大厂暑期实习 研三秋招 </p>
+<p>刷leetcode  hot-100  看labuladong 算法小抄</p>
+<p><a target="_blank" rel="noopener" href="https://labuladong.gitbook.io/algo/">https://labuladong.gitbook.io/algo/</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/labuladong/fucking-algorithm.git">https://github.com/labuladong/fucking-algorithm.git</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/grke4s">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/grke4s</a></p>
+<p>简历修改：<a target="_blank" rel="noopener" href="https://github.com/geekcompany/ResumeSample">https://github.com/geekcompany/ResumeSample</a></p>
+<p>具体、量化、有说服力，是技术简历特别需要注重的地方。</p>
+<p>工作经历按逆序排列，最新的在最前边，按公司做一级分组，公司内按二级分组</p>
+<p>我在此项目负责了哪些工作，分别在哪些地方做得出色/和别人不一样/成长快，这个项目中，我最困难的问题是什么，我采取了什么措施，最后结果如何。这个项目中，我最自豪的技术细节是什么，为什么，实施前和实施后的数据对比如何，同事和领导对此的反应如何。</p>
+<p>每个公司写2~3个核心项目就好了，如果你有非常大量的项目，那么按分类进行合并，每一类选一个典型写出来。其他的一笔带过即可。</p>
+<p>首先，一份好的简历不光说明事实，更通过FAB模式来增强其说服力。</p>
+<ul>
+<li>Feature：是什么</li>
+<li>Advantage：比别人好在哪些地方</li>
+<li>Benefit：如果雇佣你，招聘方会得到什么好处</li>
+</ul>
+<p>其次，写简历和写议论文不同，过分的论证会显得自夸，反而容易引起反感，所以要点到为止。这里的技巧是，提供论据，把论点留给阅读简历的人自己去得出。放论据要具体，最基本的是要数字化，好的论据要让人印象深刻。举个例子：</p>
+<p>2006年，我参与了手机XX网发布系统WAPCMS的开发（<code>这部分是大家都会写的</code>）。作为核心程序员，我不但完成了网站界面、调度队列的开发工作，更提出了高效的组件级缓存系统，通过碎片化缓冲有效的提升了系统的渲染效率。（<code>这部分是很多同学忘掉的，要写出你在这个项目中具体负责的部分，以及你贡献出来的价值。</code>）在该系统上线后，Web前端性能从10QPS提升到200QPS，服务器由10台减少到3台（<code>通过量化的数字来增强可信度</code>）。2008年我升任WAPCMS项目负责人，带领一个3人小组支持着每天超过2亿的PV（<code>这就是Benefit。你能带给前雇主的价值，也就是你能带给新雇主的价值。</code>）。</p>
+<p>如果在项目里边没有那么显赫的成绩可以说怎么办？讲不出成绩时，就讲你的成长。因为学习能力也是每家公司都看中的东西。你可以写你在这个项目里边遇到了一个什么样的问题，别人怎么解决的，你怎么解决的，你的方案好在什么地方，最终这个方案的效果如何。</p>
+<h1 id="如何看源码"><a href="#如何看源码" class="headerlink" title="如何看源码"></a>如何看源码</h1><p>原则</p>
+<p>1、定焦原则： 抓主线（抓住一个核心流程去分析，不要漫无目的的去看源代码）</p>
+<p>2、宏观原则： 站在上帝视角，先脉络后枝叶 （切忌试图搞清楚每一行代码）</p>
+<p>方法</p>
+<ol>
+<li>先会使用，了解框架的设计思想和功能架构</li>
+<li>抓主线，多尝试静态看代码</li>
+<li>在源码中写注释&amp;画流程图</li>
+<li>整合总结</li>
+</ol>
+<p>技巧：宏观  –&gt;  微观  –&gt;  图解</p>
+<ol>
+<li>断点（观察调用栈，利用条件断点，表达式）</li>
+<li>反调 （Find Usages）</li>
+<li>根据接口方法找到具体实现      AoP   AopProxyFactory</li>
+<li>猜测类名方法名（比如doGetBean,doCreateBean）</li>
+<li>看控制台日志</li>
+</ol>
+<p>心态</p>
+<p>1、克服对源码的恐惧心理</p>
+<p>2、 静下心读源码</p>
+<h1 id="项目报错"><a href="#项目报错" class="headerlink" title="项目报错"></a>项目报错</h1><h2 id="检查maven-依赖和数据库"><a href="#检查maven-依赖和数据库" class="headerlink" title="检查maven 依赖和数据库"></a>检查maven 依赖和数据库</h2><p>超大文件上传失败时：git filter-branch –index-filter ‘git rm -r –cached –ignore-unmatch labuladong的算法小抄官方完整版.pdf’ HEAD</p>
+<p>主流的关系型数据库有Oracle、DB2、MySQL、Microsoft SQL Server等，而 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/NoSQL/8828247?fr=aladdin">NoSQL</a> 则泛指非关系型数据库。</p>
+<p>redis（默认生成16个db编号0-15 可修改）以及 <strong>mysql (navicat 新建 database 运行.sql文件 注意：root 和 密码123456)</strong> </p>
+<p>的连接配置以及版本号   </p>
+<p>Ultimate破解版： <a target="_blank" rel="noopener" href="https://www.jb51.net/article/197138.htm">https://www.jb51.net/article/197138.htm</a></p>
+<p>清除 .m2 下的库并重新update 观察pom.xml下的maven helper展示的依赖 【现在vue前后端分离 cnpm install npm -g 全局更新】 </p>
+<p><strong>redis-server.exe redis.conf（配置文件）redis-cli.exe -h 127.0.0.1 -p 6379 -a redis（密码）</strong></p>
+<p>redis报错：<a target="_blank" rel="noopener" href="https://blog.csdn.net/loulanyue_/article/details/104978045">https://blog.csdn.net/loulanyue_/article/details/104978045</a></p>
+<h2 id="IDEA使用和调试"><a href="#IDEA使用和调试" class="headerlink" title="IDEA使用和调试"></a>IDEA使用和调试</h2><p>IDEA灵活使用全局搜索  ctrl+shift+N 可以选择搜索类、方法名等！</p>
+<p>【idea、pycharm全局搜索ctrl+shift+F 可能被搜狗输入法默认快捷键占用】</p>
+<p><a target="_blank" rel="noopener" href="http://www.pc0359.cn/article/jiaocheng/76481.html">http://www.pc0359.cn/article/jiaocheng/76481.html</a></p>
+<p>pom.xml中标签属性详解：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_35613335/article/details/90721692">https://blog.csdn.net/qq_35613335/article/details/90721692</a>  注意版本号</p>
+<p>IDEA注释模板：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_20197983/article/details/109327744">https://blog.csdn.net/qq_20197983/article/details/109327744</a> </p>
+<p>点击一个类或接口，右键diagram可以看到继承-类和实现-接口的依赖关系树。</p>
+<p>Maven 更新镜像下载源：<a target="_blank" rel="noopener" href="https://blog.csdn.net/u011134399/article/details/108331751">https://blog.csdn.net/u011134399/article/details/108331751</a></p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;settings xmlns=&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;
+          xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+          xsi:schemaLocation=&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;&gt;
+    &lt;mirrors&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;alimaven&lt;/id&gt;
+            &lt;name&gt;aliyun maven&lt;/name&gt;
+            &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;uk&lt;/id&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+            &lt;name&gt;Human Readable Name for this Mirror.&lt;/name&gt;
+            &lt;url&gt;http://uk.maven.org/maven2/&lt;/url&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;CN&lt;/id&gt;
+            &lt;name&gt;OSChina Central&lt;/name&gt;
+            &lt;url&gt;http://maven.oschina.net/content/groups/public/&lt;/url&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+        &lt;/mirror&gt;
+
+        &lt;mirror&gt;
+            &lt;id&gt;nexus&lt;/id&gt;
+            &lt;name&gt;internal nexus repository&lt;/name&gt;
+            &lt;!-- &lt;url&gt;http://192.168.1.100:8081/nexus/content/groups/public/&lt;/url&gt;--&gt;
+            &lt;url&gt;http://repo.maven.apache.org/maven2&lt;/url&gt;
+            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+        &lt;/mirror&gt;
+
+    &lt;/mirrors&gt;
+&lt;/settings&gt;</code></pre>
+<p><strong>如何拉取项目依赖的框架和库的源码到本地：</strong></p>
+<p>在对应项目pom.xml所在目录下执行以下命令： mvn dependency:resolve -Dclassifier=sources    </p>
+<p>例如Libraries下的Spring-boot 2.1.2版本源码：</p>
+<p>![1606715312589](./pics/pic (20).png)</p>
+<p><img src="./pics/git.png"></p>
+<h2 id="Erupt-一款通用后台管理框架"><a href="#Erupt-一款通用后台管理框架" class="headerlink" title="Erupt 一款通用后台管理框架"></a>Erupt 一款通用后台管理框架</h2><p>开源代码：<a target="_blank" rel="noopener" href="https://gitee.com/erupt/erupt">https://gitee.com/erupt/erupt</a>   【需要自己在代码目录下 add Spring Intializer 添加启动入口文件】</p>
+<p>部署和官网示例：<a target="_blank" rel="noopener" href="https://www.erupt.xyz/">https://www.erupt.xyz</a></p>
+<h1 id="Spring面试"><a href="#Spring面试" class="headerlink" title="Spring面试"></a>Spring面试</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/vg6lw0">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/vg6lw0</a></p>
+<p>备忘录有笔记：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problemset/leetcode-top/https://leetcode-cn.com/problemset/leetcode-hot-100/">https://leetcode-cn.com/problemset/leetcode-top/https://leetcode-cn.com/problemset/leetcode-hot-100/</a></p>
+<p>![img](./pics/pic (19).png)</p>
+<h2 id="三级缓存解决Spring循环依赖问题"><a href="#三级缓存解决Spring循环依赖问题" class="headerlink" title="三级缓存解决Spring循环依赖问题"></a>三级缓存解决Spring循环依赖问题</h2><ol>
+<li><p><strong>singletonObjects</strong>：、</p>
+<p>缓存某个beanName对应的经过了完整生命周期的bean</p>
+</li>
+<li><p><strong>earlySingletonObjects</strong>：</p>
+<p>缓存提前通过原始对象进行了AOP之后得到的代理对象，原始对象还没有进行属性注入和后续的BeanPostProcessor等生命周期</p>
+</li>
+<li><p><strong>singletonFactories</strong>：</p>
+<p>缓存的是一个ObjectFactory，也就是一个Lambda表达式。在创建一个Bean时，在每个Bean的生成过程中，都会提前暴露一个Lambda表达式，并保存到三级缓存中，这个Lambda表达式<strong>可能用到，也可能用不到</strong>，如果没有出现循环依赖依赖本bean，那么这个Lambda表达式无用，本bean按照自己的生命周期执行，执行完后直接把本bean放入singletonObjects中即可，如果出现了循环依赖依赖了本bean，则从三级缓存中获取Lambda表达式，并执行Lambda表达式得到一个AOP之后的代理对象(如果有AOP的话，如果无需AOP，则直接得到一个原始对象)，并把得到的对象放入二级缓存</p>
+</li>
+<li><p>其实还要一个缓存是 <strong>earlyProxyReferences</strong>，用来记录某个原始对象是否进行过AOP了。</p>
+</li>
+</ol>
+<h2 id="依赖注入、方法注入、自动注入、精确注入"><a href="#依赖注入、方法注入、自动注入、精确注入" class="headerlink" title="依赖注入、方法注入、自动注入、精确注入"></a>依赖注入、方法注入、自动注入、精确注入</h2><p><img src="./pics/beanIOC.png" alt="image.png"></p>
+<p><img src="./pics/beanIOC_2.png" alt="image.png"></p>
+<p><img src="./pics/springbean.png" alt="image.png"></p>
+<p><img src="./pics/bean_creation.png" alt="img"></p>
+<h2 id="在Spring中实例化一个对象有三种方式："><a href="#在Spring中实例化一个对象有三种方式：" class="headerlink" title="在Spring中实例化一个对象有三种方式："></a>在Spring中实例化一个对象有三种方式：</h2><ul>
+<li>构造函数</li>
+<li>实例工厂方法</li>
+<li>静态工厂方法</li>
+</ul>
+<h2 id="BeanDefinition是Spring创建bean时的建模对象"><a href="#BeanDefinition是Spring创建bean时的建模对象" class="headerlink" title="BeanDefinition是Spring创建bean时的建模对象"></a>BeanDefinition是Spring创建bean时的建模对象</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.cnblogs.com/loongk/p/12262101.html">https://www.cnblogs.com/loongk/p/12262101.html</a></li>
+<li>一个单例的bean意味着，这个bean只会容器创建一次。在创建后，容器中的每个地方使用的都是同一个bean对象 。</li>
+<li>一个原型的bean意味着，每次我们使用时都会重新创建这个bean。 </li>
+</ul>
+<p><img src="./pics/beandefinition.png" alt="image.png">  </p>
+<p>每次需要用到<code>BeanDefinition</code>都进行一次合并，是为了每次都拿到最新的，最有效的<code>BeanDefinition</code>，利用容器提供的一些扩展点我们可以修改<code>BeanDefinition</code>中的属性。</p>
+<h2 id="两个容器的扩展点-后置处理器"><a href="#两个容器的扩展点-后置处理器" class="headerlink" title="两个容器的扩展点  后置处理器"></a>两个容器的扩展点  后置处理器</h2><p><code>BeanFactoryPostProcessor</code>  <code>BeanDefinitionRegistryPostProcessor</code> </p>
+<ul>
+<li><code>BeanPostProcessor</code>，主要用于干预Bean的创建过程。</li>
+<li><code>BeanFactroyPostProcessor</code>，主要用于针对容器中的<code>BeanDefinition</code></li>
+<li><code>FactoryBean</code>，主要用于将一个对象直接放入到Spring容器中，同时可以封装复杂的对象的创建逻辑</li>
+</ul>
+<h2 id="了解bean的完整生命周期"><a href="#了解bean的完整生命周期" class="headerlink" title="了解bean的完整生命周期"></a>了解bean的完整生命周期</h2><p><img src="./pics/bean_lifecycle.png" alt="2020010703.png"></p>
+<h2 id="BeanFactory-和-FactoryBean-区别"><a href="#BeanFactory-和-FactoryBean-区别" class="headerlink" title="BeanFactory 和 FactoryBean 区别"></a>BeanFactory 和 FactoryBean 区别</h2><p>BeanFactory：</p>
+<p><img src="./pics/1606583994661.png" alt="1606583994661"></p>
+<p>![1606583999251](./pics/pic (23).png)</p>
+<p>FactoryBean:</p>
+<p><img src="./pics/factorybean.png" alt="image.png"></p>
+<p><code>FactoryBean </code>是Spring提供的一个扩展点，适用于复杂的Bean的创建，<code>mybatis</code>在跟Spring做整合时就用到了这个扩展点。</p>
+<p>并且<code>FactoryBean</code>所创建的Bean跟普通的Bean不一样，可以说<code>FactoryBean</code>是Spring创建Bean的另外一种手段。</p>
+<p>而<code>BeanFactory</code>是<code>Spring IOC</code>容器的顶级接口</p>
+<p>其实现类有<code>XMLBeanFactory</code>，<code>DefaultListableBeanFactory</code>以及<code>AnnotationConfigApplicationContext</code>等。</p>
+<p><code>BeanFactory</code>为Spring管理Bean提供了一套通用的规范。接口中提供的一些方法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">boolean containsBean(String beanName)</span><br><span class="line">Object getBean(String)</span><br><span class="line">Object getBean(String, Class)</span><br><span class="line">Class getType(String name)</span><br><span class="line">boolean isSingleton(String)</span><br><span class="line">String[] getAliases(String name)</span><br></pre></td></tr></table></figure>
+<p>通过这些方法，可以方便地获取bean，对Bean进行操作和判断。</p>
+<p>Spring根据我们的配置信息及类信息创建并管理对象，形成了Spring中一个Bean。</p>
+<p>把一个对象交给Spring管理主要有两种方式：</p>
+<ul>
+<li>就是用我们这篇文章中的主角，<code>FactoryBean</code>，我们直接在<code>FactoryBean</code>的<code>getObject</code>方法直接返回需要被管理的对象即可</li>
+<li><code>@Bean</code>注解，同样通过<code>@Bean</code>注解标注的方法直接返回需要被管理的对象即可。</li>
+</ul>
+<p>ApplicationContext详解：<a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/rnhqrs">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/rnhqrs</a></p>
+<h1 id="Spring-Boot"><a href="#Spring-Boot" class="headerlink" title="Spring Boot"></a>Spring Boot</h1><p>三种监听器 ApplicationListener(Spring的)、SpringApplicationRunListeners类、SpringApplicationRunListener接口（相当于ApplicationListener的一个代理）</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/duanxz/p/11243271.html">https://www.cnblogs.com/duanxz/p/11243271.html</a></p>
+<p>EventPublishingRunListener类 实现了SpringApplicationRunListener，具有广播事件MultiCast的功能。</p>
+<p>SpringApplicationRunListener和ApplicationListener之间的关系是通过ApplicationEventMulticaster广播出去的SpringApplicationEvent所联系起来的 </p>
+<p>![img](./pics/pic (18).png)</p>
+<p>热部署原理：</p>
+<p>![1606830518947](./pics/pic (17).png)</p>
+<h1 id="微服务架构-Spring-Cloud"><a href="#微服务架构-Spring-Cloud" class="headerlink" title="微服务架构  Spring Cloud"></a>微服务架构  Spring Cloud</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/lpw8zo">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/lpw8zo</a></p>
+<p>![1606583750414](./pics/pic (16).png)</p>
+<p><img src="C:\Users\智\AppData\Local\Temp\1606583717632.png" alt="1606583717632"></p>
+<p>基本概念区分：</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/zdth72">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/zdth72</a></p>
+<p>Spring Cloud Netflix — Zuul / HystrixDashboard / Hystrix / Fegin /  Ribbon / Eureka</p>
+<p>Spring Cloud Alibaba — Nacos  / Sentinel           Spring Cloud Sleuth / Spring Cloud Config</p>
+<p>![微服务总结.jpg](./pics/pic (15).png)</p>
+<h1 id="分布式-大数据"><a href="#分布式-大数据" class="headerlink" title="分布式  大数据"></a>分布式  大数据</h1><p>Hadoop   Hive  Spark 。。。</p>
+<p>Zookeeper  <a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/zmqbt0">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/zmqbt0</a></p>
+<p>缓存：<a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/xup9c2">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/xup9c2</a></p>
+<p>CAP和共识算法：<a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/nuk3dg">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/nuk3dg</a></p>
+<p>为什么要使用消息中间件：<a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/fguabs">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/fguabs</a></p>
+<p>讲讲RocketMQ  <a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/sb7otv">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/sb7otv</a></p>
+<p>Nginx 反向代理 静态缓存 负载均衡等原理：</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/brgws3">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/brgws3</a> </p>
+<p>ElasticSearch：一个分布式，高性能、高可用、可伸缩的搜索和分析系统 </p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/ice1ww">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/ice1ww</a></p>
+<p><strong><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23202010/answer/254503794">倒排索引</a></strong></p>
+<ul>
+<li>也叫反向索引，有反向索引必有正向索引。通俗地来讲，正向索引是通过key找value，反向索引则是通过value找key</li>
+<li>倒排索引创建索引的流程：<ul>
+<li>首先把所有的原始数据进行编号，形成文档列表</li>
+<li>把文档数据进行分词，得到很多的词条，以词条为索引。保存包含这些词条的文档的编号信息。</li>
+</ul>
+</li>
+<li>搜索的过程：<ul>
+<li>当用户输入任意的词条时，首先对用户输入的数据进行分词，得到用户要搜索的所有词条；</li>
+<li>然后拿着这些词条去倒排索引列表中进行匹配，找到这些词条就能找到包含这些词条的所有文档的编号，然后根据这些编号去文档列表中找到文档。</li>
+</ul>
+</li>
+</ul>
+<p>Dubbo  <a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/bsycy6">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/bsycy6</a> </p>
+<h1 id="Spring-MVC"><a href="#Spring-MVC" class="headerlink" title="Spring MVC"></a>Spring MVC</h1><p>![1606584255965](./pics/pic (14).png)</p>
+<h1 id="学习-MyBatis"><a href="#学习-MyBatis" class="headerlink" title="学习 MyBatis"></a>学习 MyBatis</h1><p><img src="./pics/image-20201213145637460.png" alt="image-20201213145637460"></p>
+<h2 id="获取数据库源："><a href="#获取数据库源：" class="headerlink" title="获取数据库源："></a>获取数据库源：</h2><p><img src="./pics/datasource.png" alt="image.png"></p>
+<h2 id="获取执行语句源："><a href="#获取执行语句源：" class="headerlink" title="获取执行语句源："></a><strong>获取执行语句源：</strong></h2><p><img src="./pics/image-20201213145447546.png" alt="image-20201213145447546"></p>
+<p><img src="./pics/mybatis_all.png" alt="image.png"></p>
+<h2 id="缓存默认先走二级，开启默认是一级"><a href="#缓存默认先走二级，开启默认是一级" class="headerlink" title="缓存默认先走二级，开启默认是一级"></a>缓存默认先走二级，开启默认是一级</h2><p><strong>核心概念</strong></p>
+<p><img src="./pics/mybatis_concept.png" alt="image.png"></p>
+<p><img src="./pics/1607915606231.png" alt="1607915606231"></p>
+<h2 id="简单业务逻辑代码"><a href="#简单业务逻辑代码" class="headerlink" title="简单业务逻辑代码"></a><strong>简单业务逻辑代码</strong></h2><p><img src="./pics/image-20201213150127590.png" alt="image-20201213150127590"></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/congweijing/article/details/82499627">https://blog.csdn.net/congweijing/article/details/82499627</a></p>
+<p>![1606583842624](./pics/pic (13).png)</p>
+<p>整体结构：</p>
+<p>先写好bean model，实体dao层-Mapper，service-接口和impl实现类(供MVC的controller调用)，resources/mapper路径下的XML配置，包括<resultMap>…</resultMap>和数据库操作关联映射</p>
+<p><a target="_blank" rel="noopener" href="https://biglead.blog.csdn.net/article/details/104006321?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.not_use_machine_learn_pai&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.not_use_machine_learn_pai">https://biglead.blog.csdn.net/article/details/104006321?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.not_use_machine_learn_pai&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-2.not_use_machine_learn_pai</a></p>
+<p>![1606583874103](./pics/pic (12).png)</p>
+<h1 id="JVM-Java虚拟机内存模型"><a href="#JVM-Java虚拟机内存模型" class="headerlink" title="JVM Java虚拟机内存模型"></a>JVM Java虚拟机内存模型</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/bb8g95">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/bb8g95</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/ghpbgz">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/ghpbgz</a></p>
+<p>![1606800066575](./pics/pic (11).png)</p>
+<p>![JVM内存模型.png](./pics/pic (10).png) </p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u011635492/article/details/81046174https://www.cnblogs.com/jklixin/p/13457936.html">https://blog.csdn.net/u011635492/article/details/81046174https://www.cnblogs.com/jklixin/p/13457936.html</a></p>
+<blockquote>
+<p>方法（包括静态方法）中不能有静态变量，方法中存在的是局部变量。静态变量是定义在类中，方法体外面的。 对象可以分为基本类型和引用类型。</p>
+<p><strong>JDK8及之后，非/静态的成员变量（定义在类中，方法之外）、常量池均存在于堆内存，JDK8之前常量和静态变量在方法区；</strong></p>
+<p><strong>局部变量（在方法内）存在于栈内存（虚拟机栈的栈帧中局部变量表），理论上Java使用全局变量安全性会变差。</strong></p>
+<p><strong>Java中new创建的对象存储在堆内存中，引用变量a存储在栈内存中。</strong></p>
+<ul>
+<li>成员变量—静态属性：随类的存在而存在，是在类加载的初始化；非静态属性：随实例的属性存在而存在。</li>
+<li>局部变量不能加static，包括protected, private, public这些也不能加，局部变量保存在栈中。</li>
+<li>成员变量可以不显式初始化，由系统设定默认值；局部变量没有默认值，所以必须设定初始赋值。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p> 类加载器将硬盘上的.class文件读入内存中的那一块内存区域。</p>
+<p><strong>JVM中运行时数据区分为程序计数器（字节码指令前面的index）、堆、虚拟机栈、本地方法栈和方法区五个部分！</strong></p>
+<p><strong>方法区与堆一样，是被线程共享的区域。</strong>在方法区中，存储了每个类的元信息（包括类的名称、方法信息、字段信息）、静态变量、常量（final修饰）以及编译器编译后的代码等。</p>
+<p><strong>在Class文件中</strong>除了类的字段、方法、接口等描述信息外，还有一项信息是常量池，用来存储编译期间生成的字面量和符号引用。</p>
+<p>在方法区中有一个<strong>运行时常量池</strong>，它是每一个类或接口的常量池的运行时表示形式，在类和接口被加载到JVM后，对应的运行时常量池就被创建出来。但不是只有Class文件常量池中的内容才能进入运行时常量池，在运行期间也可将新的常量放入其中。</p>
+<p><strong>JVM是软件模拟的虚拟机，基于栈运行，每个线程拥有独立的栈，虚拟机栈中又有很多栈帧，栈帧又被分成了几个区域：</strong></p>
+<ul>
+<li><strong>局部变量表、操作数栈、动态链接、返回地址、附加信息。</strong></li>
+</ul>
+<p>本地方法栈：JAVA通过JNI调用C、C++动态链接库需要的栈，随着socket的发展，JNI技术已经用得非常非常少。</p>
+</blockquote>
+<blockquote>
+<p>说下永久代、元空间之间的区别？</p>
+<p><strong>方法区是规范，永久代、元空间是具体实现。</strong>方法区是Java中的接口，永久代、元空间是Java中接口的实现类。</p>
+<p>JDK8之前，静态成员变量确实存放在方法区；但<strong>JDK8之后就取消了永久代（在堆中，用于存放类的元信息及InstanceKlass类的实例），取而代之的是元空间（在OS内存中，用于存放类的元信息）</strong>，永久代中的数据也进行了迁移，静态成员变量迁移到了堆中。</p>
+</blockquote>
+<p>执行引擎在执行带有操作数的字节码指令时，会有一个构造运行环境的过程；<strong>this指针</strong>就是在构造运行环境过程中实现的。</p>
+<blockquote>
+<p>理解：</p>
+<p>虚拟机对方法区的引用：动态链接，虚拟机栈对堆区的引用：局部变量</p>
+<p>方法区与堆区的双向引用：方法区-&gt;堆区：静态引用类型的属性；堆区-&gt;方法区：klass pointer</p>
+</blockquote>
+<p><strong>native关键字</strong>修饰的方法叫本地方法，和平台有关，native方法在JVM中运行时数据区有专门的本地方法栈，主要用于加载文件和动态链接库，该方法调用非Java代码的接口即JNI。</p>
+<h1 id="JMM模型-Java内存模型"><a href="#JMM模型-Java内存模型" class="headerlink" title="JMM模型 - Java内存模型"></a>JMM模型 - Java内存模型</h1><p>硬件内存架构：CPU (寄存器) - Cache缓存 - RAM主存</p>
+<p>![img](./pics/pic (1).jpg) </p>
+<p>Java的并发采用的是共享内存模型！</p>
+<p>![这里写图片描述](./pics/pic (8).png) </p>
+<p>JMM模型下的线程间通信问题:</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/29881777">https://zhuanlan.zhihu.com/p/29881777</a></p>
+<p>![这里写图片描述](./pics/pic (9).png) </p>
+<p>![这里写图片描述](./pics/pic (7).png) </p>
+<p>共享对象的可见性、竞争现象：</p>
+<p>![这里写图片描述](./pics/pic (6).png) </p>
+<p>![这里写图片描述](./pics/pic (5).png) </p>
+<blockquote>
+<p> 会扯到:</p>
+<p>volatile和 synchronized区别、数据依赖性、编译器/运行期指令重排序、内存屏障、as-if-serial、happens-before！</p>
+</blockquote>
+<h1 id="JVM调优-关注堆区-垃圾回收算法-垃圾收集器"><a href="#JVM调优-关注堆区-垃圾回收算法-垃圾收集器" class="headerlink" title="JVM调优-关注堆区   垃圾回收算法  垃圾收集器"></a>JVM调优-关注堆区   垃圾回收算法  垃圾收集器</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/fk7kq7">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/fk7kq7</a></p>
+<p>![8.png](./pics/pic (4).png) </p>
+<p>垃圾回收算法GC：<a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/vhqacp">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/vhqacp</a></p>
+<p>![10.png](./pics/pic (3).png) </p>
+<p>![1606800209235](./pics/pic (2).png)</p>
+<p>OOM 调优工具：<a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/mscg5z">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/mscg5z</a></p>
+<p>一个进程的页面可能在内存（包括系统区ROM，内存缓冲区，用户区RAM）或外存（包括交换区和文件区）</p>
+<p>使用命令行 jvisualvm -J-Xmx8096M(最大分配大小)  观察内存堆栈情况：</p>
+<p>![1606583958720](./pics/pic (1).png)</p>
+<h1 id="transient属性和序列化"><a href="#transient属性和序列化" class="headerlink" title="transient属性和序列化"></a>transient属性和序列化</h1><p><a target="_blank" rel="noopener" href="https://baijiahao.baidu.com/s?id=1636557218432721275&amp;wfr=spider&amp;for=pc">https://baijiahao.baidu.com/s?id=1636557218432721275&amp;wfr=spider&amp;for=pc</a></p>
+<p>了解serializable：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/9dragon/p/10901448.html">https://www.cnblogs.com/9dragon/p/10901448.html</a></p>
+<ul>
+<li><strong>使用场景：所有可在网络上传输的对象都必须是可序列化的，</strong>比如RMI（remote method invoke,即远程方法调用），传入的参数或返回的对象都是可序列化的，否则会出错；<strong>所有需要保存到磁盘的java对象都必须是可序列化的。通常建议：程序创建的每个JavaBean类都实现Serializeable接口。</strong></li>
+<li>transient关键字为我们提供了便利，你只需要实现Serilizable接口，将不需要序列化的属性前添加关键字transient，序列化对象的时候，这个属性就不会序列化到指定的目的地中。另外，static 静态变量不管是不是transient关键字修饰，都不会被序列化！</li>
+</ul>
+<p><img src="./pics/1606745080738.png" alt="1606745080738"></p>
+<h1 id="Java泛型"><a href="#Java泛型" class="headerlink" title="Java泛型"></a>Java泛型</h1><p>Java对象引用的概念—没有指针</p>
+<p>Object  obj = new Object();  </p>
+<p><strong>obj是对象的引用，指向这个对象；new Object()是对象；Object是类名</strong></p>
+<p><strong>引用分为：强引用 弱引用 虚引用 引用</strong> </p>
+<p>对象调用getClass() 得到类对象，描述的是类的信息，有哪些属性，属性的类型，变量名，方法和方法名。 </p>
+<p>Java是面向对象语言，将基本类型包装成对象可以设计对象类的一些操作，但包装类不能被继承，因为被final修饰。 </p>
+<p>基本数据类型不可以泛型化，但相应的包装类型可以（包括Integer/Long-大写/Float/Double/Short/Byte/Character/Boolean）</p>
+<p>基本数据类型属于局部变量表，也就是存储在方法区上 </p>
+<p>![在这里插入图片描述](./pics/pic (36).png) </p>
+<p>输出：true、true（补码）</p>
+<p><strong>Object类是所有类的父类</strong>，如果一个类没有使用extends关键字明确继承另一个类，那么这个类默认继承Object类。 </p>
+<p>只有Object及其子类才可以泛型化，其方法包括：</p>
+<p>![1606745198718](./pics/pic (35).png)</p>
+<p><T>是假设泛型为T，当该泛型类实例化时，T可以为Integer或String, 但是一个实例T不可能两者都是。&lt;?&gt;表示泛型不确定。</p>
+<h1 id="Java反射"><a href="#Java反射" class="headerlink" title="Java反射"></a>Java反射</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36226453/article/details/82790375">https://blog.csdn.net/qq_36226453/article/details/82790375</a></p>
+<p>![img](./pics/pic (22).png)</p>
+<p>![img](./pics/pic (21).png)  </p>
+<p>获取Class对象的三种方式：</p>
+<ul>
+<li>Object.getClass();</li>
+<li>任何类和数据类型（包括基本数据类型）都有一个可直接调用的“静态”的class属性</li>
+<li>常用：通过Class类的静态方法：Class.forName(String  className)</li>
+</ul>
+<h1 id="abstract-抽象类-amp-接口-修饰符"><a href="#abstract-抽象类-amp-接口-修饰符" class="headerlink" title="abstract-抽象类 &amp; 接口  修饰符"></a>abstract-抽象类 &amp; 接口  修饰符</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_40302611/article/details/80426381">https://blog.csdn.net/qq_40302611/article/details/80426381</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_44543508/article/details/102609910">https://blog.csdn.net/qq_44543508/article/details/102609910</a></p>
+<p>Interface：</p>
+<ol>
+<li><p>接口中的成员变量默认都是public、static、final类型的，必须被显式初始化 </p>
+</li>
+<li><p>接口中的方法默认都是public、abstract类型的</p>
+</li>
+<li><p>接口中只能包含public、static、final类型的成员变量和public、abstract类型的成员方法</p>
+</li>
+<li><p>接口没有构造方法，不能被实例化，在接口中定义构造方法是非法的</p>
+</li>
+<li><p>一个接口不能实现另一个接口，但它可以继承多个其他接口。 interface C extends A, B{} // A和B都是接口</p>
+</li>
+<li><p>当类实现某个接口时，它必须实现接口中所有的抽象方法，否则这个类必须被定义为抽象类 </p>
+</li>
+<li><p>接口中没有方法体 访问控制修饰符 四种访问级别：public、protected、默认private </p>
+<p>private只能在同一个类中访问，默认只能在同一个类，同一个包中访问 </p>
+<p>protected可以在各子类(子类可以不在同一个包中)或同一个包访问</p>
+<p>public不限制访问</p>
+</li>
+<li><p>类可用修饰符： abstract、public、final 构造方法：public、protected、private 局部变量：仅仅final </p>
+</li>
+</ol>
+<p><strong>abstract修饰符</strong> </p>
+<ol>
+<li>抽象类中可以没有抽象方法，但包含了抽象方法的类必须被定义为抽象类</li>
+<li>没有抽象构造方法，没有抽象静态方法， static 和 abstract不能连用</li>
+<li>抽象类中可以有非抽象的构造方法，创建子类的实例时可能会调用这些构造方法 </li>
+<li>抽象类及抽象方法不能被final修饰符修饰。final和abstract 不能连用，同样private和abstract不能连用。</li>
+<li>抽象类不能被实例化。因为抽象类可能含有没有方法体的抽象方法</li>
+</ol>
+<p>final修饰符 </p>
+<ul>
+<li>final具有不可变的含义，它可以修饰非抽象类，非抽象成员方法和变量 </li>
+<li>用final修饰的类不能被继承，没有子类</li>
+<li>final修饰的方法不能被子类的方法覆盖</li>
+<li>用final修饰的变量表示常量，只能被赋一次值，必须被显式初始化</li>
+<li>private修饰的方法默认为是final方法，因而不能被子类的方法覆盖</li>
+</ul>
+<p><strong>static修饰符</strong> </p>
+<ul>
+<li>静态变量在内存中只有一个拷贝，在类的所有实例中共享</li>
+<li>在静态方法中不能直接访问实例方法和实例变量</li>
+<li>在静态方法中不能使用this和super关键字</li>
+<li>静态方法不能被abstract修饰</li>
+<li>静态方法和静态变量都可以通过类名直接被访问</li>
+<li>当类被加载时，静态代码块只被执行一次</li>
+<li>类中不同的静态代码块按它们在类中出现的顺序被依次执行 </li>
+<li>public static void main(String args[]) {} 程序入口方法，可以被final修饰</li>
+</ul>
+<p><strong>super关键字</strong> </p>
+<ul>
+<li>在类的构造方法中，通过super语句调用这个类的父类的构造方法。 在构造方法中，super语句必须作为构造方法的第一条语句</li>
+<li>在子类中访问父类的被屏蔽的方法和属性 </li>
+<li>只能在构造方法或实例方法内使用super关键字。 super关键字与类的特定实例相关 方法覆盖（方法重写） </li>
+<li>方法的参数签名和返回值类型必须相同，访问控制修饰符可以不同，但是子类方法不能缩小父类方法的访问权限</li>
+<li>子类方法抛出的异常必须和父类方法抛出的异常相同，或者是父类方法抛出的异常类的子类</li>
+<li>父类的静态方法是不能被子类覆盖为非静态方法。 父类的非静态方法不能被子类覆盖为静态方法</li>
+<li>子类可以定义与父类的静态方法同名的静态方法，以便在子类中隐藏父类的静态方法。<ul>
+<li>区别：运行时，JVM把静态方法和所属的类绑定，而把实例方法和所属的实例绑定</li>
+</ul>
+</li>
+<li>父类的私有方法不能被覆盖</li>
+<li>父类的非抽象方法可以被覆盖为抽象方法 </li>
+</ul>
+<p><strong>多态</strong></p>
+<ul>
+<li><strong>对于一个引用类型的变量，Java编译器按照它声明的类型来处理</strong></li>
+<li>Base base = new Sub(); base.subMethod(); // 编译出错，Base基类，Sub子类，编译器认为base是Base类型的引用变量，Base类没有subMethod()方法。这样就必须使用强制转换，即 (Sub)(base).subMethod();</li>
+<li>对于一个引用类型的变量，运行时JVM按照它实际引用的对象来处理。 Base base = new Base(); Sub sub = (Sub)base; // 编译通过，但是运行时抛出ClassCastException，在运行时子类的引用类型变量可以转换为父类的引用类型，而相反的过程却不可以。</li>
+<li>在运行时环境中，通过引用类型变量来访问所引用对象的方法和属性时，JVM采用以下的绑定规则:<ul>
+<li><strong>实例方法</strong>与<strong>引用变量实际引用的对象</strong>的方法绑定，即<strong>动态绑定</strong></li>
+<li><strong>静态方法</strong>与<strong>引用变量所声明的类型</strong>的方法绑定，即<strong>静态绑定——</strong>编译阶段即绑定完成</li>
+<li><strong>成员变量 (静态变量和实例变量)</strong> 与引用变量所声明的类型的成员变量绑定—<strong>静态绑定</strong>。</li>
+</ul>
+</li>
+</ul>
+<h1 id="JavaSE-之-JDK8-新特性"><a href="#JavaSE-之-JDK8-新特性" class="headerlink" title="JavaSE 之 JDK8+ 新特性"></a>JavaSE 之 JDK8+ 新特性</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/swzzft#uXC2p">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/swzzft#uXC2p</a></p>
+<p>![1606584043605](./pics/pic (24).png)</p>
+<h1 id="Collection接口-ArrayList-LinkedList"><a href="#Collection接口-ArrayList-LinkedList" class="headerlink" title="Collection接口  ArrayList  LinkedList"></a>Collection接口  ArrayList  LinkedList</h1><p>包含集合的基本操作和属性</p>
+<p>而Collections是工具类（不能实例化，服务于Collection框架，提供静态方法实现对各种集合的搜索、排序、线程安全化等操作）</p>
+<p>![1606584065923](./pics/pic (25).png)</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/bkyxnc/p/10460199.html%E3%80%90Set/List/Queue%E4%B8%89%E5%A4%A7%E7%B1%BB%EF%BC%8C%E8%80%8CMap%E6%98%AF%E5%8D%95%E7%8B%AC%E7%9A%84%EF%BC%8C%E5%8F%AA%E6%98%AF%E4%BE%9D%E8%B5%96%E4%BA%8ECollection%E3%80%91">https://www.cnblogs.com/bkyxnc/p/10460199.html【Set/List/Queue三大类，而Map是单独的，只是依赖于Collection】</a></p>
+<p>![1606584075669](./pics/pic (26).png)</p>
+<p>ArrayList （继承了AbstractList<E>，实现了RandomAccess）</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/fua39n">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/fua39n</a></p>
+<p>LinkedList（双端链表，继承了AbstractSequentialList<E>，实现了Collection中的Deque接口，支持作为栈使用）</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/zwe9eu">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/zwe9eu</a></p>
+<p>两者共同实现Cloneable、List<E> 和 java.io.serializable</p>
+<p>另外还有一种实现了List接口：Vector</p>
+<p>面试官问—ArrayList和LinkedList哪个更占空间：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/166686856">https://zhuanlan.zhihu.com/p/166686856</a></p>
+<p>使用 List&lt;List<Integer>&gt; list = new ArrayList&lt;List<Integer>&gt;();  从Java 1.7开始List&lt;List<Integer>&gt; list = new ArrayList&lt;&gt;();</p>
+<p>copyonwrite:  <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/afc6e0ae08b0">https://www.jianshu.com/p/afc6e0ae08b0</a>      linkedHashSet</p>
+<p>LinkedBlockongQueue：<a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/gnll91">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/gnll91</a></p>
+<p>![1606584111578](./pics/pic (27).png)</p>
+<h1 id="HashMap"><a href="#HashMap" class="headerlink" title="HashMap"></a>HashMap</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/vg6lw0">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/vg6lw0</a></p>
+<h1 id="ConcurrentHashMap-线程安全"><a href="#ConcurrentHashMap-线程安全" class="headerlink" title="ConcurrentHashMap 线程安全"></a>ConcurrentHashMap 线程安全</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/biiid7">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/biiid7</a></p>
+<h1 id="并发编程之JMM-amp-Volatile底层原理剖析"><a href="#并发编程之JMM-amp-Volatile底层原理剖析" class="headerlink" title="并发编程之JMM&amp;Volatile底层原理剖析"></a>并发编程之JMM&amp;Volatile底层原理剖析</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/lihfz6">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/lihfz6</a></p>
+<p>![image.png](./pics/pic (28).png) </p>
+<p>结论：</p>
+<ul>
+<li>第二个操作是volatile写，不管第一个操作是什么都不会重排序</li>
+<li>第一个操作是volatile读，不管第二个操作是什么都不会重排序</li>
+<li>第一个操作是volatile写，第二个操作是volatile读，也不会发生重排序</li>
+</ul>
+<p>JMM内存屏障插入策略：</p>
+<ul>
+<li>在每个volatile写操作的前面插入一个StoreStore屏障</li>
+<li>在每个volatile写操作的后面插入一个StoreLoad屏障</li>
+<li>在每个volatile读操作的后面插入一个LoadLoad屏障</li>
+<li>在每个volatile读操作的后面插入一个LoadStore屏障</li>
+</ul>
+<p>注意：X86处理器不会对读-读、读-写和写-写操作做重排序, 会省略掉这3种操作类型对应的内存屏障。仅会对写-读操作做重排序，所以volatile写-读操作只需要在volatile写后插入StoreLoad屏障</p>
+<h1 id="CAS-amp-AQS"><a href="#CAS-amp-AQS" class="headerlink" title="CAS&amp;AQS"></a>CAS&amp;AQS</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/lipz8a">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/lipz8a</a></p>
+<p>AQS同步队列CLH【具有竞争锁-同步状态的资格】和Condition条件等待队列</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/cburl0">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/cburl0</a></p>
+<p>Lock: <a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/ikndx4">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/ikndx4</a></p>
+<p>CAS 和 AQS：</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/lipz8a">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/lipz8a</a></p>
+<p>CAS原理和ABA问题：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/23281499">https://www.zhihu.com/question/23281499</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/javalyy/p/8882172.html">https://www.cnblogs.com/javalyy/p/8882172.html</a></p>
+<p>AQS同步队列和等待队列：<a target="_blank" rel="noopener" href="https://blog.csdn.net/zx48822821/article/details/86768484">https://blog.csdn.net/zx48822821/article/details/86768484</a></p>
+<p>AQS 和 Lock详解：</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/ikndx4">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/ikndx4</a></p>
+<p>自旋锁：死循环</p>
+<h1 id="Java中的锁-分类"><a href="#Java中的锁-分类" class="headerlink" title="Java中的锁 分类"></a>Java中的锁 分类</h1><p>![1606584181072](./pics/pic (29).png)</p>
+<p>![1606584202342](./pics/pic (30).png)</p>
+<h1 id="并发编程之内置锁synchronized底层原理剖析"><a href="#并发编程之内置锁synchronized底层原理剖析" class="headerlink" title="并发编程之内置锁synchronized底层原理剖析"></a>并发编程之内置锁synchronized底层原理剖析</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/gcwg7g">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/gcwg7g</a></p>
+<p>【Synchronized加锁方式】</p>
+<p>![1606584207854](./pics/pic (31).png)</p>
+<p>【Synchronized原理】</p>
+<p>互斥性 ：Synchronized修饰的代码块、实例方法、静态方法，多线程并发访问时，只能有一个线程获取到锁，其它线程都处于阻塞等待可见性： 某线程 A 对于进入 同步块之前或在 synchronized 中对于共享变量的操作，对于后续的持有同一个监视器锁的其他线程可见</p>
+<p>【说volatile之前不得不说一下 JMM 模型】</p>
+<p>然后volatile有三个特性，可见性、无法保证原子性、禁止指令重排序。</p>
+<p>可见性：因为加了volatile时会在编译的时候加上lock指令，lock会锁住缓存行，加了lock以后会触发mesi缓存一致性协议，从而出现只有有写操作就会刷会主存重新读取最新的变量。</p>
+<p>但 MESI（修改-独占-共享-无效）又不是原子性，所以无法保证线程安全。</p>
+<p>因为会出现伪共享（频繁失效）的情况，这时我们需要通过填充缓存行的方式来解决变量频繁失效的问题。</p>
+<p>这也解释了不保证原子性，也说明了volatile是线程不安全的。</p>
+<p>最后说一下禁止重排序，说之前先说一下为什么会有重排序的情况发生，因为cpu在等的过程中不能闲着，就去做其他事，增加使用率。</p>
+<p>然后就是重排序规则要遵守as-if-serial 和happens-before规则，保证结果一致性。</p>
+<p>volatile加了lock后会触发内存屏障storeload（x86处理器只有这一种），从而保证不会重排序。</p>
+<p>volatile是java中的一个关键字，主要在java多线程环境下，修饰共享资源变量，让共享资源变量在多线程之间具有可见性（可见性：一个线程对共享变量进行操作，其他线程能够立即知晓）</p>
+<p>另外jvm底层会对代码进行重排序（重排序：在不影响代码执行结果的情况下，改变代码的执行顺序，已达到优化代码执行效率的结果），但在多线程情况下，重排序可能会对代码的执行结果造成影响，使用volatile修饰的变量相关的代码就不会被重排序（通过在代码之间增加内存屏障，阻止重排序），就保证了多线程场景下代码的正常执行。</p>
+<p>【说说对as-if-serial和happens-before语义的理解】</p>
+<p>as-if-serial：在单线程情况下，无论cpu怎么重新排序指令，都不能对程序的执行结果造成影响。</p>
+<p>【这里有个疑问：那多线程是不是就不能满足as-if-serial语义了】</p>
+<p>happens-before：在多线程情况下，每个线程能及时知晓其他线程最新的状态信息，也就是线程之间的可见性，保证可见性的前提。</p>
+<h1 id="ForkJoin框架：分而治之，分为多个子任务计算"><a href="#ForkJoin框架：分而治之，分为多个子任务计算" class="headerlink" title="ForkJoin框架：分而治之，分为多个子任务计算"></a>ForkJoin框架：分而治之，分为多个子任务计算</h1><p>ForkJoinPool Executor提供了 RecursiveAction（无返回值） 和 RecursiveTask 任务接口</p>
+<p><a target="_blank" rel="noopener" href="https://www.yuque.com/tingya/sfi1t7/nw87lu">https://www.yuque.com/tingya/sfi1t7/nw87lu</a> </p>
+<p>工作方式：fork/join 和 worksteal（任务阻塞而线程不阻塞，有小偷）</p>
+<p>区分：Runnable 和 Callable？</p>
+<h1 id="线程池-可自定义：并发编程之ThreadPoolExecutor源码"><a href="#线程池-可自定义：并发编程之ThreadPoolExecutor源码" class="headerlink" title="线程池-可自定义：并发编程之ThreadPoolExecutor源码"></a>线程池-可自定义：并发编程之ThreadPoolExecutor源码</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/bv45d9">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/bv45d9</a></p>
+<p>public class ThreadPoolExecutor extends AbstractExecutorService </p>
+<p>以一个字节8位来简化解释线程池对运行状态和当前有效线程个数的原子管理方案。</p>
+<p>线程池当中，用一个ctl原子变量包装了高3位的运行状态和低5位线程个数</p>
+<p>![1606584142035](./pics/pic (32).png)</p>
+<p>1、提交-execute任务优先级：线程相当于员工</p>
+<p>先放核心线程，再放队列workQueue（take和poll方法），再放非核心线程（maximum-核心线程数）</p>
+<p>2、执行任务task优先级：</p>
+<p>先找核心线程task，再找非核心，最后找队列。</p>
+<p>都放不下则拒绝策略 AbortPolicy-也有LRU等算法排除。</p>
+<p>线程复用 addWorker 和执行流程图：</p>
+<p>![1606584151051](./pics/pic (33).png)</p>
+<p>start才是线程级别的调用 否则run方法级别的调用！</p>
+<p>![1606584155821](./pics/pic (34).png)</p>
+<h1 id="Java设计模式"><a href="#Java设计模式" class="headerlink" title="Java设计模式"></a>Java设计模式</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_38024548/article/details/80480831">https://blog.csdn.net/qq_38024548/article/details/80480831</a></p>
+<h1 id="设计秒杀系统"><a href="#设计秒杀系统" class="headerlink" title="设计秒杀系统"></a>设计秒杀系统</h1><p><a target="_blank" rel="noopener" href="https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/vbuq5t">https://www.yuque.com/books/share/9f4576fb-9aa9-4965-abf3-b3a36433faa6/vbuq5t</a></p>
+<p><strong>什么是秒杀</strong></p>
+<p>秒杀场景一般会在电商网站举行一些活动或者节假日在12306网站上抢票时遇到。对于电商网站中一些稀缺或者特价商品，电商网站一般会在约定时间点对其进行限量销售，因为这些商品的特殊性，会吸引大量用户前来抢购，并且会在约定的时间点同时在秒杀页面进行抢购。</p>
+<p><strong>秒杀系统场景特点</strong></p>
+<ol>
+<li>秒杀时大量用户会在同一时间同时进行抢购，网站瞬时访问流量激增。</li>
+<li>秒杀一般是访问请求数量远远大于库存数量，只有少部分用户能够秒杀成功。</li>
+<li>秒杀业务流程比较简单，一般就是下订单减库存。</li>
+</ol>
+<p><strong>秒杀架构设计理念</strong></p>
+<p>限流：鉴于只有少部分用户能够秒杀成功，所以要限制大部分流量，只允许少部分流量进入服务后端。</p>
+<p>削峰：对于秒杀系统瞬时会有大量用户涌入，所以在抢购一开始会有很高的瞬间峰值。高峰值流量是压垮系统很重要的原因，所以如何把瞬间的高流量变成一段时间平稳的流量也是设计秒杀系统很重要的思路。实现削峰的常用的方法有利用缓存和消息中间件等技术。</p>
+<p>异步处理：秒杀系统是一个高并发系统，采用异步处理模式可以极大地提高系统并发量，其实异步处理就是削峰的一种实现方式。</p>
+<p>内存缓存：秒杀系统比较大的瓶颈一般都是数据库读写，由于数据库读写属于磁盘IO，性能很低，如果能够把部分数据或业务逻辑转移到内存缓存，效率会有极大地提升。</p>
+<p>可拓展：当然如果我们想支持更多用户，更大的并发，最好就将系统设计成弹性可拓展的，如果流量来了，拓展机器就好了。像淘宝、京东等双十一活动时会增加大量机器应对交易高峰。</p>
+<p><strong>设计思路</strong></p>
+<p>将请求拦截在系统上游，降低下游压力：秒杀系统特点是并发量极大，但实际秒杀成功的请求数量却很少，所以如果不在前端拦截很可能造成数据库读写锁冲突，甚至导致死锁，最终请求超时。</p>
+<p>充分利用缓存：利用缓存可极大提高系统读写速度。</p>
+<p>消息队列：消息队列可以削峰，将拦截大量并发请求，这也是一个异步处理过程，后台业务根据自己的处理能力，从消息队列中主动的拉取请求消息进行业务处理。</p>
+<p><strong>前端方案</strong></p>
+<p>浏览器端(js)：</p>
+<p>页面静态化：将活动页面上的所有可以静态的元素全部静态化，并尽量减少动态元素。通过CDN来抗峰值。</p>
+<p>禁止重复提交：用户提交之后按钮置灰，禁止重复提交</p>
+<p>用户限流：在某一时间段内只允许用户提交一次请求，比如可以采取IP限流</p>
+<p><strong>后端方案</strong></p>
+<p>服务端控制器层(网关层)</p>
+<p>限制uid(UserID)访问频率：我们上面拦截了浏览器访问的请求，但针对某些恶意攻击或其它插件，在服务端控制层需要针对同一个访问uid，限制访问频率。</p>
+<p><strong>服务层</strong></p>
+<p>上面只拦截了一部分访问请求，当秒杀的用户量很大时，即使每个用户只有一个请求，到服务层的请求数量还是很大。比如我们有100W用户同时抢100台手机，服务层并发请求压力至少为100W。</p>
+<p>采用消息队列缓存请求：既然服务层知道库存只有100台手机，那完全没有必要把100W个请求都传递到数据库啊，那么可以先把这些请求都写到消息队列缓存一下，数据库层订阅消息减库存，减库存成功的请求返回秒杀成功，失败的返回秒杀结束。</p>
+<p>利用缓存应对读请求：对类似于12306等购票业务，是典型的读多写少业务，大部分请求是查询请求，所以可以利用缓存分担数据库压力。</p>
+<p>利用缓存应对写请求：缓存也是可以应对写请求的，比如我们就可以把数据库中的库存数据转移到Redis缓存中，所有减库存操作都在Redis中进行，然后再通过后台进程把Redis中的用户秒杀请求同步到数据库中。</p>
+<p><strong>数据库层</strong></p>
+<p>数据库层是最脆弱的一层，一般在应用设计时在上游就需要把请求拦截掉，数据库层只承担“能力范围内”的访问请求。所以，上面通过在服务层引入队列和缓存，让最底层的数据库高枕无忧。</p>
+
+  </section>
+
+</article>
+
+<section class="read-more">
+           
+    
+               
+            <div class="read-more-item">
+                <span class="read-more-item-dim">Newer Post</span>
+                <h2 class="post-list__post-title post-title"><a href="/2020/12/23/程序员的简历之道/" title=""></a></h2>
+                <p class="excerpt">
+                
+                
+
+俗话说的好：“工欲善其事，必先利其器”。准备一份好的简历对于能不能找到一份好工作起到了至关重要的作用。
+
+六 如何写自己的简历？一份好的简历可以在整个申请面试以及面试过程中起到非常好的作用。
+6.1 为什么说简历很重要？假如你是网申，你的简历必然会经过HR的筛选，一张简历HR可能也就花费10秒钟
+                &hellip;
+                </p>
+                <div class="post-list__meta"><time datetime="2020-12-23T06:19:13.855Z" class="post-list__meta--date date">2020-12-23</time> &#8226; <span class="post-list__meta--tags tags">于 </span><a class="btn-border-small" href="/2020/12/23/程序员的简历之道/">继续阅读</a></div>
+                           
+            </div>
+        
+        
+        
+     
+   
+   
+  
+</section>
+
+  
+
+            <footer class="footer">
+    <span class="footer__copyright">
+        &copy; 2020 SEU zhi - 本站点采用 <a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+       
+    </span>
+    <span class="footer__copyright">
+             - 基于 <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a> 搭建，使用 <a target="_blank" rel="noopener" href="https://github.com/monniya/hexo-theme-new-vno ">new-vno</a> 主题，由<a target="_blank" rel="noopener" href="https://monniya.com ">@Monniya</a> 修改自 <a href="https://github.com/lenbo-ma/hexo-theme-vno" target="_blank">Vno</a>, 原创出自<a href="http://github.com/onevcat/vno" target="_blank">onevcat</a>
+         </span>
+       
+    
+    
+</footer>
+
+
+        </div>
+    </div>
+
+     
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-78918255-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+    
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?9cdad07c755fa23f6aced510c6760e87";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+
+
+    <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    
+</body>
+</html>
